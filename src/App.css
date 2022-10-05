@@ -1,38 +1,208 @@
-.App {
-  text-align: center;
+/* Global Start*/
+:focus-visible {
+     outline: none !important;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar {
+     display: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root {
+     --beige: #decec6;
+     --orange: #a35d26;
+     --orange-dark: #8e4024;
+     --brown: #70291f;
+     --brown-dark: #411f20;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+::-moz-selection {
+     /* Code for Firefox */
+     color: var(--beige);
+     background: var(--orange-dark);
 }
-
-.App-link {
-  color: #61dafb;
+::selection {
+     color: var(--beige);
+     background: var(--orange-dark);
 }
+body {
+     background-color: var(--beige) !important;
+}
+.cursor-pointer {
+     cursor: pointer;
+     transition: 0.5s all;
+}
+.cursor-pointer:hover {
+     transform: translateY(-10px);
+}
+.bg-beige {
+     background-color: var(--beige) !important;
+}
+.bg-orange {
+     background-color: var(--orange) !important;
+}
+.bg-brown {
+     background-color: var(--brown) !important;
+}
+.bg-orange-dark {
+     background-color: var(--orange-dark) !important;
+}
+.bg-brown-dark {
+     background-color: var(--brown-dark) !important;
+}
+.text-beige {
+     color: var(--beige) !important;
+}
+.text-orange {
+     color: var(--orange) !important;
+}
+.text-brown {
+     color: var(--brown) !important;
+}
+.text-orange-dark {
+     color: var(--orange-dark) !important;
+}
+.text-brown-dark {
+     color: var(--brown-dark) !important;
+}
+.opacity-90 {
+     opacity: 0.9 !important;
+}
+.overflow-x-hidden {
+     overflow-x: hidden !important;
+}
+.overflow-y-hidden {
+     overflow-y: hidden !important;
+}
+.btn {
+     transition: all 0.5s !important;
+}
+.btn.disabled {
+     scale: 0.8 !important;
+     opacity: 0.5 !important;
+     border: none !important;
+}
+.form-control {
+     appearance: auto !important;
+     color: var(--brown-dark) !important;
+     background-color: var(--beige) !important;
+     border: none !important;
+}
+.form-control:focus {
+     border: none !important;
+     box-shadow: none !important;
+}
+.no-hover.cursor-pointer:hover {
+     transform: none !important;
+}
+.height200px {
+     max-height: 400px !important;
+}
+.bg-none {
+     background: none !important;
+     border: none !important;
+}
+.mb-300px{
+     margin-bottom: 300px;
+}
+.shadow-bottom{
+     box-shadow: rgba(0, 0, 0, 0.5) 5px 2px 15px 12px;
+}
+/* Global End */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Header Start */
+.header{
+     z-index: 1111111111;
+}
+.header span.text-orange{
+     color: var(--orange) !important;
+}
+.header.text-brown-dark * {
+     color: var(--brown-dark) !important;
+}
+.header.text-beige * {
+     color: var(--beige) !important;
+}
+/* Header End */
+
+/* Footer Start */
+.footer{
+     height: 300px;
+     z-index: -1;
+}
+.footer.text-brown-dark * {
+     color: var(--brown-dark) !important;
+}
+.footer span.text-orange{
+     color: var(--orange) !important;
+}
+.footer span.text-beige{
+     color: var(--beige) !important;
+}
+/* Footer End */
+
+/* Home Page Start */
+.home-page .main-section {
+     background: url(https://wallpaperaccess.com/full/253322.jpg) no-repeat
+          center;
+     background-size: cover;
+}
+.events .frame {
+     height: 60vh;
+}
+.home-page .books-recommendations {
+     background: url(https://gallery.yopriceville.com/var/albums/Backgrounds/Wood_Texture_Background.jpg?m=1552260251)
+          repeat-y center;
+     background-size: cover;
+}
+.books .shelf {
+     filter: drop-shadow(0px 20px 15px rgba(0, 0, 0, 0.634)) saturate(1.5);
+}
+.books-div .shelf-frame {
+     height: 30vh;
+}
+.books-div .books-covers {
+     z-index: 2;
+     height: 40vh;
+     width: 30vh;
+}
+/* Home Page End */
+
+/* Books List Start */
+.book .book-image-frame {
+     height: 50vh;
+     width: 35vh;
+}
+.book-image-frame .book-cover {
+     height: 50vh;
+}
+.book-col .del-btn {
+     top: 6%;
+     right: 15%;
+     z-index: 111;
+}
+/* Books List End */
+
+/* Media Queries Start */
+@media screen and (max-width: 980px) {
+     .books-div .shelf-frame {
+          height: 25vh;
+     }
+     .books-div .books-covers {
+          height: 30vh;
+          width: 20vh;
+     }
+}
+@media screen and (max-width: 670px) {
+     .books-div .books-covers {
+          height: 20vh;
+          width: 15vh;
+     }
+}
+@media screen and (max-width: 600px) {
+     .books-div .books-covers {
+          height: 20vh;
+          width: 15vh;
+     }
+}
+/* Media Queries End */
+.square {
+     height: 200px;
+     width: 200px;
 }
