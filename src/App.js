@@ -42,7 +42,7 @@ function App() {
   useEffect(() => {
     setBooksArrayLocal(JSON.parse(localStorage.getItem('local-books')));
   },
-    [booksArrayLocal.length])
+    [])
 
   let allBooks = [];
   if (booksArrayLocal.length > 0) allBooks = booksArrayLocal.concat(booksArrayAPI);
