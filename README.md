@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# React online store
+  
+## Intro :
+  
+  Our world is a great place full of countries cities and small villages. You reach all of them by reading their cultures, education, and thoughts. So the website's name is Book the World. As it is a small room you can book it with the book.
+  
+  
+## Project Idea :
+  
+  This is a Library Management System, which stimulates the system of adding books or removing them according to your authority, or you can just browse the books if you are just a user.
+  
+  
+## How it works ...?
+  
+  The project depends totally on the front-end only without the back-end so any data stored is stored in (browser local storage) as your registers, login authority, or the books you add or remove.
+  The other books viewed on the website are from a fake API [Books List - Django] 
+  
+  
+## Experience fro the project :  
+  
+  - It makes me go deep in react 
+  - Using Hooks for the first time 
+  
+  
+## Challenges :  
+  
+  The main challenge was to make a full website that simulate the real one only by using browser local storage 
+  
+  
+## Used Library :  
+  
+  - React JavaScript library
+  
+  
+## Screenshots
+  
+  ### Home Page
+  With other two sections
+  
+  1. World’s Library events
+  2. Books Recommendations
+  ![home page](/src/screenshots/Screenshot-1.png)
+  ![home page](/src/screenshots/Screenshot-7.png)
+  
+  
+  ### Login Form
+  With upper switcher
+  for Register form
+  (as shown the super admin is logging in)
+  ![Login](/src/screenshots/Screenshot-2.png)
+  ![Login](/src/screenshots/Screenshot-3.png)
+  
+  
+  ### Books List
+  With the super admin authority 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  (Delete books button
+  as shown)
+  ![Books List](/src/screenshots/Screenshot-5.png)
+  
+  For normal admin
+  ![Books List](/src/screenshots/Screenshot-6.png)
+  
+  
+  ### Add books Form
+  This form is available only for
+  - normal admin
+  - super admin
+  ![Add book](/src/screenshots/Screenshot-4.png)
+  
+  
+  ### ERROR 404 Page
+  ![Add book](/src/screenshots/Screenshot-8.png)
+  
+  
 
-## Available Scripts
+  
 
-In the project directory, you can run:
+## Prerequisites
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+  
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clone the repository
+   ```sh
+   git clone https://github.com/Bavly001/library-management-system.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Start NPM Server
+   ```sh
+   npm start
+   ```
+4. Open Local Server to view it in your browser
+   ```sh
+   http://localhost:3000
+   ```
+  
+  
+---
+  
+I hope you enjoy my simple small project and got your appreciation ... Thank you.
